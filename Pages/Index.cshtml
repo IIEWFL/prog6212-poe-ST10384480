@@ -1,0 +1,36 @@
+﻿@page
+@model P3CMCS.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h2>Submit a Claim</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="LecturerName">Lecturer Name</label>
+        <input type="text" class="form-control" id="LecturerName" name="Claim.LecturerName" required />
+    </div>
+
+    <div class="form-group">
+        <label for="LecturerId">Lecturer ID</label>
+        <input type="text" class="form-control" id="LecturerId" name="Claim.LecturerId" required />
+    </div>
+
+    <div class="form-group">
+        <label for="HoursWorked">Hours Worked</label>
+        <input type="number" class="form-control" id="HoursWorked" name="Claim.HoursWorked" step="0.01" required />
+    </div>
+
+    <div class="form-group">
+        <label for="Rate">Rate</label>
+        <input type="number" class="form-control" id="Rate" name="Claim.Rate" step="0.01" required />
+    </div>
+
+    <div class="form-group">
+        <label for="Notes">Additional Notes</label>
+        <textarea class="form-control" id="Notes" name="Claim.Notes"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit Claim</button>
+</form>

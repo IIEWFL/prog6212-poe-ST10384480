@@ -1,0 +1,26 @@
+﻿@page
+@model ReportsModel
+
+<h2>Accepted Claims Report</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Lecturer Name</th>
+            <th>Hours Worked</th>
+            <th>Rate</th>
+            <th>Total Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var claim in Model.AcceptedClaims)
+        {
+            <tr>
+                <td>@claim.LecturerName</td>
+                <td>@claim.HoursWorked</td>
+                <td>@claim.Rate</td>
+                <td>@claim.TotalAmount</td>
+            </tr>
+        }
+    </tbody>
+</table>

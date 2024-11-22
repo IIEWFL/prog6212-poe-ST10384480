@@ -1,0 +1,29 @@
+﻿@page
+@model P3CMCS.Pages.SubmitClaimModel
+@{
+    ViewData["Title"] = "Submit Claim";
+}
+
+<h2>Submit a Claim</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="LecturerName">Lecturer Name</label>
+        <input type="text" class="form-control" id="LecturerName" name="LecturerName" required />
+    </div>
+    <div class="form-group">
+        <label for="HoursWorked">Hours Worked</label>
+        <input type="number" class="form-control" id="HoursWorked" name="HoursWorked" required />
+    </div>
+    <div class="form-group">
+        <label for="Rate">Rate</label>
+        <input type="number" class="form-control" id="Rate" name="Rate" required />
+    </div>
+    <div class="form-group">
+        <label for="Notes">Notes</label>
+        <textarea class="form-control" id="Notes" name="Notes"></textarea>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit Claim</button>
+    </div>
+</form>
